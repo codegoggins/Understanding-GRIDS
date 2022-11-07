@@ -1,0 +1,111 @@
+/* variables */
+:root{
+    --primary:#FFC636;
+    --secondary:#000000;
+}
+
+/* reset */
+
+body,p,a,li,ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* base styles */
+body{
+    background-color: var(--secondary);
+}
+
+input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding:10px 20px;
+    border-radius: 15px;
+    border: 2px solid #9893D8;
+    color:black;
+}
+
+.btn{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding:10px 20px;
+    border-radius: 10px;
+    transition:all ease-in-out 0.3s;
+}
+
+.btn:hover{
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* fonts */
+h1,h2,h3,h4{
+    color: #DDDBFF;
+    font-weight: normal;
+}
+
+p,li,a{
+    color: #989398;
+}
+
+h1,h3{
+    font-size: 1.3em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.1em;
+}
+
+/* mobile styles (we don't need to add media queries) */
+
+
+/* small tablet styles */
+
+
+/* small tablet styles */
+@media screen and (min-width:620px){
+
+}
+
+/* large tablet and laptop styles */
+@media screen and (min-width:960px){
+    
+}
+
+/* Desktop styles */
+@media screen and (min-width:1200px){
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .card-content{
+    width: 330px;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
