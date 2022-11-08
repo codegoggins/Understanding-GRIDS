@@ -69,6 +69,118 @@ h4{
 }
 
 /* mobile styles (we don't need to add media queries) */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 10px;
+}
+
+/* Navbar */
+
+.navbar{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul{
+    display: none;
+}
+.navbar h1{
+    grid-column: 3/6;
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Main Section */
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text{
+    padding: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-text p{
+    margin-bottom: 2rem;
+}
+
+.main-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1rem 3rem;
+}
+
+/* Feature cards */
+
+.cards div.card{
+    grid-column: 1/9;
+    margin: 20px 10px;
+}
+
+.card{
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Footer */
+footer{
+    padding: 1rem;
+    background-color: rgb(24, 23, 23);
+}
+
+footer .copyright{
+    grid-column: 1/6;
+}
+
+footer .social{
+    grid-column: 7/9;
+    display: flex;
+    gap: 1rem;
+}
 
 
 /* small tablet styles */
@@ -89,23 +201,6 @@ h4{
     
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.card{
-    border: 1px solid grey;
-    border-radius: 10px;
-    overflow: hidden;
-}
 
-.card .card-content{
-    width: 330px;
-}
 
-.card img{
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-}
